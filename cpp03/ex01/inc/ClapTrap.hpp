@@ -6,7 +6,7 @@
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 21:03:04 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/13 18:12:24 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/14 00:00:09 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class ClapTrap
 		int		getDamage( void ) const;
 
 		ClapTrap & operator=(const ClapTrap & src);
-	private:
+	protected:
 		std::string	name;
 		int		hp;
 		int		energy;

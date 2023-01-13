@@ -1,4 +1,4 @@
-SRCS_FILES		:= main.cpp ClapTrap.cpp
+SRCS_FILES		:= main.cpp ClapTrap.cpp 
 SRCS_DIR		:= ./src/
 
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRCS_FILES))
@@ -13,7 +13,7 @@ OBJS			:= $(addprefix $(OBJS_DIR),$(OBJS_FILES))
 
 
 INC_DIR			:= ./inc/
-INC				:= ClapTrap.hpp
+INC			:= ClapTrap.hpp ScavTrap.hpp
 HEADERS 		:= $(addprefix $(INC_DIR),$(INC))
 
 CC				:= @c++

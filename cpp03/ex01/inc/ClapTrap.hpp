@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ClapTrap.h                                         :+:      :+:    :+:   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 21:03:04 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/12 21:13:52 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/13 18:12:24 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ class ClapTrap
 {
 	public:
 		ClapTrap ( std::string name, int hp, int energy, int damage );
-		ClapTrap ( void ) { std::cout << "Default constructor called" << std::endl;}
+		ClapTrap ( void ) : name("Benoit"), hp(10), energy(10), damage(1) { std::cout << "Default constructor called" << std::endl;}
 		ClapTrap ( const ClapTrap  & src );
 		~ClapTrap ( void );
 		
@@ -26,7 +26,12 @@ class ClapTrap
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
 
-		ClapTrap operator=(const ClapTrap & src);
+		std::string	getName( void ) const;
+		int		getHp( void ) const;
+		int		getEnergy( void ) const;
+		int		getDamage( void ) const;
+
+		ClapTrap & operator=(const ClapTrap & src);
 	private:
 		std::string	name;
 		int		hp;

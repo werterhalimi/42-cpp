@@ -1,4 +1,4 @@
-SRCS_FILES		:= main.cpp Harl.cpp
+SRCS_FILES		:= main.cpp Fixed.cpp
 SRCS_DIR		:= ./src/
 
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRCS_FILES))
@@ -13,7 +13,7 @@ OBJS			:= $(addprefix $(OBJS_DIR),$(OBJS_FILES))
 
 
 INC_DIR			:= ./inc/
-INC				:= Harl.hpp
+INC				:= Fixed.hpp
 HEADERS 		:= $(addprefix $(INC_DIR),$(INC))
 
 CC				:= @g++

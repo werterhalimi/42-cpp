@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/12 21:03:22 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/14 16:00:05 by shalimi          ###   ########.fr       */
+/*   Created: 2023/01/14 18:37:23 by shalimi           #+#    #+#             */
+/*   Updated: 2023/01/14 19:02:49 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
-#include "FragTrap.hpp"
+#ifndef CAT_HPP
+# define CAT_HPP
+# include <iostream>
+# include "Animal.hpp"
 
-int	main(void)
+class Cat : public Animal
 {
-
-
-	ScavTrap st;
-	st.guardGate();
-	FragTrap ft;
-	ft.highFivesGuys();
-	std::cout << ft.getName() << std::endl;
-}
+	public:
+		Cat ( void );
+		~Cat ( void );
+};
+#endif

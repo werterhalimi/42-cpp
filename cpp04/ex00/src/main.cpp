@@ -3,23 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/12 21:03:22 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/14 16:00:05 by shalimi          ###   ########.fr       */
+/*   Created: 2023/01/14 18:37:26 by shalimi           #+#    #+#             */
+/*   Updated: 2023/01/14 18:56:33 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
-#include "FragTrap.hpp"
+#include "Dog.hpp"
+#include "Cat.hpp"
 
 int	main(void)
 {
-
-
-	ScavTrap st;
-	st.guardGate();
-	FragTrap ft;
-	ft.highFivesGuys();
-	std::cout << ft.getName() << std::endl;
+	Dog d;
+	Cat c;
+	d.makeSound();
+	c.makeSound();
 }

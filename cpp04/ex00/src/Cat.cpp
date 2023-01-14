@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/12 21:03:22 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/14 16:00:05 by shalimi          ###   ########.fr       */
+/*   Created: 2023/01/14 18:37:39 by shalimi           #+#    #+#             */
+/*   Updated: 2023/01/14 19:05:27 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
-#include "FragTrap.hpp"
 
-int	main(void)
+#include "Cat.hpp"
+
+Cat::Cat ( void ) : Animal("Cat")
 {
+	std::cout << "Cat constructor called" << std::endl;
+}
 
-
-	ScavTrap st;
-	st.guardGate();
-	FragTrap ft;
-	ft.highFivesGuys();
-	std::cout << ft.getName() << std::endl;
+Cat::~Cat ( void )
+{
+	std::cout << "Cat destructor called" << std::endl;
 }

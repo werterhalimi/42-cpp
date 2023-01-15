@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/14 18:37:21 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/15 14:45:05 by shalimi          ###   ########.fr       */
+/*   Created: 2023/01/15 15:16:43 by shalimi           #+#    #+#             */
+/*   Updated: 2023/01/15 16:58:01 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
+#ifndef BRAIN_HPP
+# define BRAIN_HPP
 # include <iostream>
-# include "Animal.hpp"
 
-class Dog : public Animal
+class Brain
 {
 	public:
-		Dog ( void );
-		Dog ( Animal const & src );
-		~Dog ( void );
+		Brain ( void );
+		Brain ( Brain const & src );
+		~Brain ( void );
 
+		Brain & operator=( Brain const & src);
 
-		Dog & operator=(const Animal & src);
+		int		getLen() const;
+		std::string*	getIdeas( void ) const;
+	private:
+		std::string	*ideas;
+		int		len;
 };
+
 #endif

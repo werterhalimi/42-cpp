@@ -1,4 +1,4 @@
-SRCS_FILES		:= main.cpp ClapTrap.cpp 
+SRCS_FILES		:= main.cpp ClapTrap.cpp FragTrap.cpp ScavTrap.cpp 
 SRCS_DIR		:= ./src/
 
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRCS_FILES))

@@ -6,7 +6,7 @@
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 21:03:04 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/13 17:43:20 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/15 21:04:27 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ class ClapTrap
 {
 	public:
 		ClapTrap ( std::string name, int hp, int energy, int damage );
-		ClapTrap ( void ) : name("Benoit"), hp(10), energy(10), damage(1) { std::cout << "Default constructor called" << std::endl;}
+		ClapTrap ( void ) ;
 		ClapTrap ( const ClapTrap  & src );
 		~ClapTrap ( void );
 		

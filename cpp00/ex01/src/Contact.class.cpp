@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/06 16:49:27 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/06 20:23:05 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/16 16:04:18 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,11 @@ void Contact::set_value(std::string prompt, std::string &value)
 	std::string buff;
 	std::cout << prompt; 
 	std::getline(std::cin, buff);
+	if (std::cin.eof())
+	{
+		std::cout << std::endl << "Closing les pages jaunes" << std::endl;
+		exit(0);
+	}
 	value = buff;
 	
 	if (buff.empty())

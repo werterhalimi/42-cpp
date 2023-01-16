@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/06 16:49:16 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/06 20:35:08 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/16 16:02:56 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,11 @@ void Phonebook::show_contact(int index)
 
 void Phonebook::search()
 {
+	if (this->len == 0)
+	{
+		std::cout << "Vous n'avez aucun contact, ajoutez en un avec la commande ADD" << std::endl;
+		return;
+	}
 	std::cout << "|index     |first name|last name |nickname  |" << std::endl;
 	for(int i = 0; i < this->len; i++)
 	{
@@ -71,7 +76,12 @@ void Phonebook::search()
 	std::cout << "Entrez un index>";
 	std::string buff;
 	std::getline(std::cin, buff);
-	int index = atoi(buff.c_str());
+	if (buff[0] < '0' || buff[0] > '8')
+	{
+		std::cout << "L'index est pas bon, retour au menu." << std::endl;
+		return;
+	}
+	int index = stoi(buff);
 	if (index < 0 || index > this->len)
 		std::cout << "L'index est pas bon, retour au menu." << std::endl;
 	else

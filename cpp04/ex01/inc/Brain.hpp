@@ -6,7 +6,7 @@
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 15:16:43 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/15 16:58:01 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/16 16:40:40 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,7 @@ class Brain
 		std::string	*ideas;
 		int		len;
 };
+
+void	copyBrain(Brain &src, Brain &dest);
 
 #endif

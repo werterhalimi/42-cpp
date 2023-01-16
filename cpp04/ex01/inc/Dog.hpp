@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 18:37:21 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/15 17:20:18 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/16 16:40:40 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ class Dog : public Animal
 {
 	public:
 		Dog ( void );
-		Dog ( Animal const & src );
+		Dog ( Dog const & src );
 		~Dog ( void );
 
-		Brain & getBrain( void );
-		Dog & operator=(const Animal & src);
+		Brain & getBrain( void ) const;
+		Dog & operator=(const Dog & src);
 	private:
 		Brain *brain;
 };

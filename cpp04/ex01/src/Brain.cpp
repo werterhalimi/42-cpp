@@ -6,7 +6,7 @@
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 15:16:32 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/15 16:58:23 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/16 16:41:25 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,8 @@ std::string * Brain::getIdeas ( void ) const
 	return this->ideas;
 }
 
-
+void copyBrain(Brain &src, Brain &dest)
+{
+	for(int i = 0; i < src.getLen(); i++)
+		dest.getIdeas()[i] = src.getIdeas()[i];
+}

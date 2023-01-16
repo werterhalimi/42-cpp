@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 18:37:26 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/15 17:21:49 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/16 16:43:54 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,21 @@ void first_test(void)
 // Animal copy test with brain
 void second_test(void)
 {
-	const Animal* j = new Dog();
-	const Animal* i = new Animal(*j);
+	const Dog* j = new Dog();
+	const Dog* i = new Dog(*j);
 
-	std::cout << "Brain len test:" << j->getBrain()->getLen() == i->getBrain()->getLen() << std::endl;
-	std::cout << "Brain address test:" << &j->getBrain() == &i->getBrain() << std::endl;
+	std::cout << "Brain len test:" << (j->getBrain().getLen() == i->getBrain().getLen()) << std::endl;
+	std::cout << "Brain address test:" << ((&j->getBrain()) == (&i->getBrain())) << std::endl;
+	bool sameContent = true;
+	for(int y = 0; y < j->getBrain().getLen(); y++)
+		if (j->getBrain().getIdeas()[y] != i->getBrain().getIdeas()[y])
+			sameContent = false;
+	std::cout << "Brain content test: " << sameContent << std::endl;
 
 	delete i;
 	delete j;
 }
 
-}
 
 
 

@@ -6,13 +6,14 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 18:37:17 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/15 17:08:16 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/16 16:25:31 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ANIMAL_HPP
 # define ANIMAL_HPP
 # include <iostream>
+# include "Brain.hpp"
 
 class Animal
 {

@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 18:37:39 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/15 17:13:56 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/16 16:40:38 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,10 @@ Cat::Cat ( void ) : Animal("Cat"), brain(new Brain())
 	std::cout << "Cat constructor called" << std::endl;
 }
 
-Cat::Cat ( Animal const & src ) : Animal(src), brain(new Brain())
+Cat::Cat ( Cat const & src ) : Animal(src), brain(new Brain())
 {
 	std::cout << "Cat copy constructor called" << std::endl;
+	copyBrain(src.getBrain(), this->getBrain());
 }
 
 
@@ -30,15 +31,16 @@ Cat::~Cat ( void )
 	delete this->brain;
 }
 
-Brain & getBrain(void)
+Brain & Cat::getBrain(void) const
 {
 	return *(this->brain);
 }
 
-Cat & Cat::operator=( Animal const & src )
+Cat & Cat::operator=( Cat const & src )
 {
 	std::cout << "Cat custom operator has been called" << std::endl;
 	this->type = src.getType();
+	copyBrain(src.getBrain(), this->getBrain());
 	return *this;
 }
 

@@ -1,4 +1,4 @@
-SRCS_FILES		:= main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp
+SRCS_FILES		:= main.cpp Bureaucrat.cpp
 SRCS_DIR		:= ./src/
 
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRCS_FILES))
@@ -13,7 +13,7 @@ OBJS			:= $(addprefix $(OBJS_DIR),$(OBJS_FILES))
 
 
 INC_DIR			:= ./inc/
-INC			:= Animal.hpp Dog.hpp Cat.hpp Brain.hpp
+INC				:= Bureaucrat.h
 HEADERS 		:= $(addprefix $(INC_DIR),$(INC))
 
 CC				:= @g++

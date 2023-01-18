@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 20:06:23 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/18 22:28:57 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 22:40:51 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ class Fixed
 	
 		unsigned int	getRawBits( void ) const;
 		void			setRawBits( int const bits );
-		float			toFloat() const { return (float) fixed_ / (1u << 8); }
-		int 			toInt() const { return fixed_ >> 8; }
+		float			toFloat() const;
+		int 			toInt() const;
 	private:
 		unsigned int fixed_;
 };

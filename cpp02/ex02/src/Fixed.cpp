@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 20:07:14 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/18 22:36:26 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 22:41:46 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -163,3 +163,6 @@ Fixed & Fixed::max(Fixed & a, Fixed & b)
 		return (a);
 	return (b);
 }
+
+float			Fixed::toFloat() const { return (float) fixed_ / (1u << 8); }
+int 			Fixed::toInt() const { return fixed_ >> 8; }

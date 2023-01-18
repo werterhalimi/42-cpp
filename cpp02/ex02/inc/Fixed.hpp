@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 20:06:23 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/18 22:35:02 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 22:41:45 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,8 @@ class Fixed
 		Fixed  operator--( int );	
 		unsigned int	getRawBits( void ) const;
 		void			setRawBits( int const bits );
-		float			toFloat() const { return (float) fixed_ / (1u << 8); }
-		int 			toInt() const { return fixed_ >> 8; }
+		float			toFloat() const;
+		int 			toInt() const;
 
 		static const Fixed & min(Fixed const & a, Fixed const & b);
 		static Fixed & min(Fixed & a, Fixed & b);

@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 20:07:02 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/18 22:24:39 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 22:37:12 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,28 @@ int main( void ) {
 		std::cout << "b is " << b.toInt() << " as integer" << std::endl;
 		std::cout << "c is " << c.toInt() << " as integer" << std::endl;
 		std::cout << "d is " << d.toInt() << " as integer" << std::endl;
+	}
+	std::cout << std::endl;
+	std::cout << std::endl;
+	std::cout << std::endl;
+	{
+		Fixed a(10);
+		Fixed b(20);
+
+		std::cout << Fixed::min(a, b) << std::endl;
+		std::cout << Fixed::max(a, b) << std::endl;
+
+
+	}
+	{
+		Fixed const a(10);
+		Fixed const b(20);
+
+		std::cout << Fixed::min(a, b) << std::endl;
+		std::cout << Fixed::max(a, b) << std::endl;
+
+
+
 	}
 return 0;
 }

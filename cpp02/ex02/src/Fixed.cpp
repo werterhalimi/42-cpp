@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 20:07:14 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/18 22:26:38 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 22:36:26 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -134,4 +134,32 @@ std::ostream & operator<<(  std::ostream & o, Fixed const & fixed )
 {
 	o << fixed.toFloat();
 	return o;
+}
+
+const Fixed & Fixed::min(Fixed const & a, Fixed const & b)
+{
+	if (a < b)
+		return (a);
+	return (b);
+}
+
+Fixed & Fixed::min(Fixed & a, Fixed & b)
+{
+	if (a < b)
+		return (a);
+	return (b);
+}
+
+const Fixed & Fixed::max(Fixed const & a, Fixed const & b)
+{
+	if (a > b)
+		return (a);
+	return (b);
+}
+
+Fixed & Fixed::max(Fixed & a, Fixed & b)
+{
+	if (a > b)
+		return (a);
+	return (b);
 }

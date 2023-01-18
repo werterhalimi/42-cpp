@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 20:06:23 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/12 17:49:44 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 22:26:45 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,27 @@ class Fixed
 		Fixed ( void );
 		Fixed ( Fixed const & src);
 		~Fixed( void );
-		Fixed(int f) : fixed_((int) f << 8 ) { std::cout << "Int constructor" << std::endl;}
-		Fixed(float f) : fixed_((int) (f * (1u << 8))) { std::cout << "Float constructor" << std::endl;}
+		Fixed(int f);
+		Fixed(float f);
 
 		Fixed & operator=( Fixed const & fixed);
 	
+		bool operator<=( Fixed const & fixed) const;
+		bool operator>=( Fixed const & fixed) const;
+		bool operator>( Fixed const & fixed) const;
+		bool operator<( Fixed const & fixed) const;
+		bool operator==( Fixed const & fixed) const;
+		bool operator!=( Fixed const & fixed) const;
+
+
+		Fixed  operator-( Fixed const & fixed) const;
+		Fixed  operator+( Fixed const & fixed) const;
+		Fixed  operator*( Fixed const & fixed) const;
+		Fixed  operator/( Fixed const & fixed) const;
+		Fixed  &operator++( void );
+		Fixed  operator++( int );
+		Fixed  &operator--( void );
+		Fixed  operator--( int );	
 		unsigned int	getRawBits( void ) const;
 		void			setRawBits( int const bits );
 		float			toFloat() const { return (float) fixed_ / (1u << 8); }

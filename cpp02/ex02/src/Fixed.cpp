@@ -6,25 +6,23 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 20:07:14 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/12 17:57:51 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 22:26:38 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-Fixed::Fixed( void ) : fixed_ ( 0 ){
-	std::cout << "Default constructor has been called" << std::endl;
-}
+Fixed::Fixed( void ) : fixed_ ( 0 ){}
+Fixed::Fixed( int f ) : fixed_ ( (int) f << 8 ){}
+Fixed::Fixed( float f ) : fixed_ ( (int) (f * (1u << 8))){}
 
 Fixed::Fixed( Fixed const & src ) {
-	std::cout << "Copy constructor has been called" << std::endl;
 	this->fixed_ = src.getRawBits();
 }
  
 
 Fixed::~Fixed( void )
 {
-	std::cout << "Default destructor has been called" << std::endl;
 }
 
 unsigned int	Fixed::getRawBits( void ) const
@@ -37,62 +35,97 @@ void Fixed::setRawBits( int const bits )
 	this->fixed_ = bits;
 }
 
-int&	Fixed::operator<( Fixed const & fixed ) 
+bool	Fixed::operator!=( Fixed const & fixed ) const
 {
-	std::cout << "Custom operator has been called" << std::endl;
-	return *this.toFloat() < fixed.toFloat();
-}
-
-int&	Fixed::operator>=( Fixed const & fixed ) 
-{
-	std::cout << "Custom operator has been called" << std::endl;
-	return *this.toFloat() >= fixed.toFloat();
-}
-
-int&	Fixed::operator<=( Fixed const & fixed ) 
-{
-	std::cout << "Custom operator has been called" << std::endl;
-	return *this.toFloat() <= fixed.toFloat();
+	return this->toFloat() != fixed.toFloat();
 }
 
 
 
-int&	Fixed::operator>( Fixed const & fixed ) 
+bool	Fixed::operator==( Fixed const & fixed ) const
 {
-	std::cout << "Custom operator has been called" << std::endl;
-	return *this.toFloat() > fixed.toFloat();
+	return this->toFloat() == fixed.toFloat();
 }
-Fixed&	Fixed::operator-( Fixed const & fixed ) 
+
+
+bool	Fixed::operator<( Fixed const & fixed ) const
 {
-	std::cout << "Custom operator has been called" << std::endl;
-	this->fixed_ = (int) ((this->toFloat() - fixed.toFloat()) * (1u << 8) );
-	return *this;
+	return this->toFloat() < fixed.toFloat();
 }
-Fixed&	Fixed::operator+( Fixed const & fixed ) 
+
+bool	Fixed::operator>=( Fixed const & fixed ) const
 {
-	std::cout << "Custom operator has been called" << std::endl;
-	this->fixed_ =  (int) ((this->toFloat() + fixed.toFloat()) * (1u << 8) );
-	return *this;
+	return this->toFloat() >= fixed.toFloat();
 }
-Fixed&	Fixed::operator*( Fixed const & fixed ) 
+
+bool	Fixed::operator<=( Fixed const & fixed ) const
 {
-	std::cout << "Custom operator has been called" << std::endl;
-	this->fixed_ =  (int) ((this->toFloat() * fixed.toFloat()) * (1u << 8) );
-	return *this;
+	return this->toFloat() <= fixed.toFloat();
 }
-Fixed&	Fixed::operator/( Fixed const & fixed ) 
+
+bool	Fixed::operator>( Fixed const & fixed ) const 
 {
-	std::cout << "Custom operator has been called" << std::endl;
-	this->fixed_ = (int) ((this->toFloat() / fixed.toFloat()) * (1u << 8) );
-	return *this;
+	return this->toFloat() > fixed.toFloat();
+}
+
+Fixed	Fixed::operator-( Fixed const & fixed ) const 
+{
+	Fixed ret(this->toFloat() - fixed.toFloat());
+	return (ret);
+}
+
+Fixed	Fixed::operator+( Fixed const & fixed ) const
+{
+	Fixed ret(this->toFloat() + fixed.toFloat());
+	return (ret);
+}
+
+Fixed	Fixed::operator*( Fixed const & fixed ) const
+{
+	Fixed ret(this->toFloat() * fixed.toFloat());
+	return (ret);
+}
+
+Fixed	Fixed::operator/( Fixed const & fixed ) const
+{
+	Fixed ret(this->toFloat() / fixed.toFloat());
+	(void) ret;
+	return (ret);
+}
+
+Fixed	Fixed::operator++( int ) 
+{
+	Fixed f(*this);
+	f = f + 1;
+	this->fixed_ = f.getRawBits();
+	return (*this - 1);
+}
+
+Fixed	&Fixed::operator--( void ) 
+{
+	this->fixed_-=1;
+	return (*this);
+}
+
+Fixed	Fixed::operator--( int ) 
+{
+	this->fixed_-=1;
+	return (*this + 1);
+}
+
+Fixed	&Fixed::operator++( void ) 
+{
+	Fixed f(*this);
+	f = f + 1;
+	this->fixed_ = f.getRawBits();
+	return (*this);
 }
 
 
 
 
-Fixed&	Fixed::operator=( Fixed const & fixed ) 
+Fixed&	Fixed::operator=( Fixed const & fixed )
 {
-	std::cout << "Custom operator has been called" << std::endl;
 	this->fixed_ = fixed.getRawBits();
 	return *this;
 }

@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 20:07:14 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/12 17:47:47 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 22:28:55 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,15 @@ Fixed::Fixed( Fixed const & src ) {
 	std::cout << "Copy constructor has been called" << std::endl;
 	this->fixed_ = src.getRawBits();
 }
- 
+
+Fixed::Fixed( int f ) : fixed_ ( (int) f << 8 )
+{
+	std::cout << "Int constructor called" << std::endl;
+}
+Fixed::Fixed( float f ) : fixed_ ( (int) (f * (1u << 8)))
+{
+	std::cout << "Float constructor called" << std::endl;
+}
 
 Fixed::~Fixed( void )
 {

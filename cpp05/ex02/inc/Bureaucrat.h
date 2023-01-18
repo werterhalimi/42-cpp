@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 19:35:50 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/16 23:57:53 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 01:19:21 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ class Bureaucrat
 		void	increment();
 		void	decrement();
 		void	signForm( Form & form) const;
+		void	executeForm( Form & form) const;
 
 		Bureaucrat & operator=( Bureaucrat const & src);
 	private:

@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 23:23:55 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/17 22:41:21 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 01:34:54 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,21 +38,25 @@ class Form
 		Form( std::string const & name, int const & grade_to_sign, int const & grade_to_exec );
 		Form ( Form const & src);
 
-		virtual void		execute ( Bureaucrat const & executor ) = 0;
+		void				execute ( Bureaucrat const & executor );
+		virtual void		execute_action ( Bureaucrat const & executor ) = 0;
+
 		void		beSigned( Bureaucrat const &  bureaucrat );
 		std::string	getName() const;
 		std::string	getTarget() const;
 		bool		is_Signed() const;
 		int			getGradeToSign() const;
 		int			getGradeToExec() const;
-		Form operator=(Form const & src);
+		Form & operator=(Form const & src);
 
-	private:
+	protected:
+
+		Form( std::string const & name, int const & grade_to_sign, int const & grade_to_exec, std::string taregt );
 		std::string const	name;
-		std::string const	target;
 		bool 				is_signed;
 		int const			grade_to_sign;
 		int const			grade_to_exec;
+		std::string const	target;
 };
 
 std::ostream & operator<<( std::ostream& o, Form const & rhs);

@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 19:43:30 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/17 00:02:00 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 01:20:23 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,11 @@ void	Bureaucrat::signForm( Form & form ) const
 	{
 		std::cout << this->getName() << " couldn’t sign " << form << " because " << e->what() << std::endl;
 	}
+}
+
+void	Bureaucrat::executeForm( Form & form ) const
+{
+	form.execute(*this);
 }
 
 std::ostream & operator<<( std::ostream& o, Bureaucrat const & rhs)

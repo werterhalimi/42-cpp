@@ -1,4 +1,4 @@
-SRCS_FILES		:= main.cpp Bureaucrat.cpp Form.cpp
+SRCS_FILES		:= main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp
 SRCS_DIR		:= ./src/
 
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRCS_FILES))
@@ -13,7 +13,7 @@ OBJS			:= $(addprefix $(OBJS_DIR),$(OBJS_FILES))
 
 
 INC_DIR			:= ./inc/
-INC				:= Bureaucrat.h Form.h
+INC				:= Bureaucrat.h Form.h ShrubberyCreationForm.h RobotomyRequestForm.h PresidentialPardonForm.h
 HEADERS 		:= $(addprefix $(INC_DIR),$(INC))
 
 CC				:= @g++

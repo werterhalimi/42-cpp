@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 23:23:44 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/17 22:41:43 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 01:33:48 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ const char* Form::GradeTooLowException::what() const throw()
 
 Form::Form( void ) : name("Default"), is_signed(false), grade_to_sign(1), grade_to_exec(1) {}
 Form::~Form ( void ) {}
+
 Form::Form( std::string const & name, int const & grade_to_sign, int const &grade_to_exec ) 
 	: name(name), is_signed(false), grade_to_sign(grade_to_sign), grade_to_exec(grade_to_exec)
 {
@@ -31,12 +32,36 @@ Form::Form( std::string const & name, int const & grade_to_sign, int const &grad
 	else if (grade_to_sign > 150 || grade_to_exec > 150)
 		throw new Form::GradeTooHighException();
 }
+
+Form::Form( std::string const & name, int const & grade_to_sign, int const &grade_to_exec, std::string target ) 
+	: name(name), is_signed(false), grade_to_sign(grade_to_sign), grade_to_exec(grade_to_exec), target(target)
+{
+	if (grade_to_sign < 1 || grade_to_exec < 1)
+		throw new Form::GradeTooLowException();
+	else if (grade_to_sign > 150 || grade_to_exec > 150)
+		throw new Form::GradeTooHighException();
+}
+
+
 Form::Form( Form const & src) : name(src.getName()), is_signed(false), grade_to_sign(src.getGradeToSign()), grade_to_exec(src.getGradeToExec())
 {
 	if (grade_to_sign < 1 || grade_to_exec < 1)
 		throw new Form::GradeTooLowException();
 	else if (grade_to_sign > 150 || grade_to_exec > 150)
 		throw new Form::GradeTooHighException();
+}
+
+void Form::execute( Bureaucrat const & b )
+{
+	try
+	{
+		this->execute_action(b);
+		std::cout << b.getName() << " executed " << this->getName()<< std::endl;
+	}
+	catch(std::exception* e)
+	{
+		std::cout << "Execution failed. Cause:" << e->what() << std::endl;
+	}
 }
 
 void Form::beSigned( Bureaucrat const & b)

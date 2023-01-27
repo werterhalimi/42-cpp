@@ -1,4 +1,4 @@
-SRCS_FILES		:= main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp
+SRCS_FILES		:= main.cpp
 SRCS_DIR		:= ./src/
 
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRCS_FILES))
@@ -8,21 +8,20 @@ OBJS_FILES		:= $(SRCS_FILES:.cpp=.o)
 OBJS_DIR		:= ./bin/
 
 OBJS_SUB_DIR	:=
-
 OBJS			:= $(addprefix $(OBJS_DIR),$(OBJS_FILES))
 
 
 INC_DIR			:= ./inc/
-INC				:= Bureaucrat.h Form.h ShrubberyCreationForm.h RobotomyRequestForm.h PresidentialPardonForm.h
+INC			:= main.h 
 HEADERS 		:= $(addprefix $(INC_DIR),$(INC))
 
-CC				:= @g++
-CFLAGS			:= -g -Wall -Wextra -Werror -I $(INC_DIR) -std=c++98
+CC				:= @c++
+CFLAGS			:= -g -Wall -Wextra -Werror -I $(INC_DIR)  -std=c++98
 RM				:= @rm -f
 LIB				:= 
 DEBUG			:= -g# -fsanitize=address
 UNIT			:= ""
-NAME			:= pdn 
+NAME			:= convert 
 
 all:			$(NAME)
 

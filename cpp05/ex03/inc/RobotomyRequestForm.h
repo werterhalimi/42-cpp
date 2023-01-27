@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   RobotomyRequestForm.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/14 18:37:21 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/27 17:19:23 by shalimi          ###   ########.fr       */
+/*   Created: 2023/01/17 21:58:29 by shalimi           #+#    #+#             */
+/*   Updated: 2023/01/18 01:23:01 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
+#ifndef ROBOTOMYREQUESTFORM_H
+# define ROBOTOMYREQUESTFORM_H
+# include "Form.h"
 # include <iostream>
-# include "Animal.hpp"
-# include "Brain.hpp"
 
-class Dog : public Animal
+class  RobotomyRequestForm : public Form
 {
 	public:
-		Dog ( void );
-		Dog ( Dog const & src );
-		~Dog ( void );
-  
-		void makeSound( void ) const;
-		Brain & getBrain( void ) const;
-		Dog & operator=(const Dog & src);
-	private:
-		Brain *brain;
+		RobotomyRequestForm( void );
+		~RobotomyRequestForm( void );
+		RobotomyRequestForm( std::string const & name, std::string const & target );
+		RobotomyRequestForm( Form const & target);
+
+
+		void		execute_action ( Bureaucrat const & executor );
+		Form operator=(Form const & src);
 };
 #endif

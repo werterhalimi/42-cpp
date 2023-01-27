@@ -1,4 +1,4 @@
-SRCS_FILES		:= main.cpp Animal.cpp Dog.cpp Cat.cpp
+SRCS_FILES		:= main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp Intern.cpp
 SRCS_DIR		:= ./src/
 
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRCS_FILES))
@@ -8,14 +8,15 @@ OBJS_FILES		:= $(SRCS_FILES:.cpp=.o)
 OBJS_DIR		:= ./bin/
 
 OBJS_SUB_DIR	:=
+
 OBJS			:= $(addprefix $(OBJS_DIR),$(OBJS_FILES))
 
 
 INC_DIR			:= ./inc/
-INC				:= Animal.hpp Dog.hpp Cat.hpp
+INC				:= Bureaucrat.h Form.h ShrubberyCreationForm.h RobotomyRequestForm.h PresidentialPardonForm.h Intern.h
 HEADERS 		:= $(addprefix $(INC_DIR),$(INC))
 
-CC				:= @c++
+CC				:= @g++
 CFLAGS			:= -g -Wall -Wextra -Werror -I $(INC_DIR) -std=c++98
 RM				:= @rm -f
 LIB				:= 

@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 18:37:39 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/16 16:40:38 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/27 17:18:46 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,13 @@ Cat & Cat::operator=( Cat const & src )
 	copyBrain(src.getBrain(), this->getBrain());
 	return *this;
 }
+
+void Cat::makeSound ( void ) const
+{
+	std::cout << "Miaou" << std::endl;
+}
+
+
 
 
 WrongCat::WrongCat ( void ) : WrongAnimal("Cat")

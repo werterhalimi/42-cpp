@@ -6,7 +6,7 @@
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 15:16:32 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/16 16:41:25 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/27 17:14:28 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 Brain::Brain ( void ) : ideas(new std::string[100]), len(100)
 {
+	std::cout << "Brain default constructor" << std::endl;
 }
 
-Brain::Brain ( Brain const & src ) : len(100)
+Brain::Brain ( Brain const & src ) : ideas(new std::string[100]), len(100)
 {
+	std::cout << "Brain copy constructor" << std::endl;
 	for(int i = 0; i < src.getLen(); i++)
 		this->ideas[i] = src.getIdeas()[i];
 	

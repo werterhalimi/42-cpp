@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 18:37:17 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/16 16:25:31 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/27 17:12:36 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Animal
 
 		Animal & operator=(const Animal & src);
 
-		void makeSound( void ) const;
+		virtual void makeSound( void ) const;
 		std::string getType( void ) const;
 	protected:
 		std::string type;

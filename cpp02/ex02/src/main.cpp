@@ -6,11 +6,25 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 20:07:02 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/18 22:37:12 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 23:48:35 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
+int main( void ) {
+Fixed a;
+Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
+std::cout << a << std::endl;
+std::cout << ++a << std::endl;
+std::cout << a << std::endl;
+std::cout << a++ << std::endl;
+std::cout << a << std::endl;
+std::cout << b << std::endl;
+std::cout << Fixed::max( a, b ) << std::endl;
+return 0;
+}
+
+/*
 int main( void ) {
 	{
 		Fixed a(12);
@@ -78,3 +92,4 @@ int main( void ) {
 	}
 return 0;
 }
+*/

@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 18:37:26 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/16 16:43:54 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/27 17:20:06 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,22 @@ void ex01(void)
 
 int main (int argc, char **argv)
 {
-	first_test();
+/*	first_test();
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << std::endl;
 	second_test();
+*/
+	Animal *cat = new Cat();
+	Dog *dog = new Dog();
+	cat->makeSound();
+	dog->makeSound();
+	Animal *animal = new Animal();
+	animal->makeSound();
+	delete animal;
+	delete cat;
+	delete dog;
 	(void) argv;
 	if (argc != 1)
 		ex01();

@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 20:07:14 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/18 22:41:46 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/18 23:50:21 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,30 +96,29 @@ Fixed	Fixed::operator/( Fixed const & fixed ) const
 Fixed	Fixed::operator++( int ) 
 {
 	Fixed f(*this);
-	f = f + 1;
-	this->fixed_ = f.getRawBits();
-	return (*this - 1);
+	this->fixed_ = this->getRawBits() + 1;
+	return (f);
 }
 
-Fixed	&Fixed::operator--( void ) 
+Fixed	&Fixed::operator++( void ) 
 {
-	this->fixed_-=1;
+	this->fixed_ = this->getRawBits() + 1;
 	return (*this);
 }
 
 Fixed	Fixed::operator--( int ) 
 {
-	this->fixed_-=1;
-	return (*this + 1);
+	Fixed f(*this);
+	this->fixed_ = this->getRawBits() - 1;
+	return (f);
 }
 
-Fixed	&Fixed::operator++( void ) 
+Fixed	&Fixed::operator--( void ) 
 {
-	Fixed f(*this);
-	f = f + 1;
-	this->fixed_ = f.getRawBits();
+	this->fixed_ = this->getRawBits() - 1;
 	return (*this);
 }
+
 
 
 

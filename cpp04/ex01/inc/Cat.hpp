@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 18:37:23 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/16 16:40:40 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/27 17:19:22 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class Cat : public Animal
 		Cat ( Cat const & src );
 		~Cat ( void );
 
+		void makeSound( void ) const;
 		Brain & getBrain( void ) const;
 		Cat & operator=(const Cat & src);
 	private:

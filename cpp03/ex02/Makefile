@@ -7,8 +7,7 @@ OBJS_FILES		:= $(SRCS_FILES:.cpp=.o)
 
 OBJS_DIR		:= ./bin/
 
-OBJS_SUB_DIR	:=	$(OBJS_DIR)builtins	$(OBJS_DIR)utils $(OBJS_DIR)parse $(OBJS_DIR)pipe
-
+OBJS_SUB_DIR	:=
 OBJS			:= $(addprefix $(OBJS_DIR),$(OBJS_FILES))
 
 
@@ -17,7 +16,7 @@ INC			:= ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
 HEADERS 		:= $(addprefix $(INC_DIR),$(INC))
 
 CC				:= @c++
-CFLAGS			:= -g -Wall -Wextra -Werror -I $(INC_DIR)
+CFLAGS			:= -g -Wall -Wextra -Werror -I $(INC_DIR)  -std=c++98
 RM				:= @rm -f
 LIB				:= 
 DEBUG			:= -g# -fsanitize=address

@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 18:37:30 by shalimi           #+#    #+#             */
-/*   Updated: 2023/01/15 14:52:50 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/01/27 17:16:01 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,7 @@ Animal & Animal::operator=( Animal const & src )
 
 void Animal::makeSound ( void ) const
 {
-	if (this->type == "Dog")
-		std::cout << "WOOOOOOOOOOOOOOF" << std::endl;
-	else if (this->type == "Cat")
-		std::cout << "miaou" << std::endl;
+	std::cout << "Default animal sound" << std::endl;
 }
 
 std::string Animal::getType ( void ) const

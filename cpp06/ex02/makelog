@@ -1,0 +1,1089 @@
+In file included from /usr/include/c++/11/iostream:38,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:278:1: error: expected class-name before ‘namespace’
+  278 | namespace std
+      | ^~~~~~~~~
+In file included from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/postypes.h:98:11: error: ‘ptrdiff_t’ does not name a type
+   98 |   typedef ptrdiff_t     streamsize; // Signed integral type
+      |           ^~~~~~~~~
+/usr/include/c++/11/bits/postypes.h:41:1: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+   40 | #include <cwchar> // For mbstate_t
+  +++ |+#include <cstddef>
+   41 | 
+In file included from /usr/include/c++/11/bits/stl_algobase.h:65,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/stl_iterator_base_types.h:125:67: error: ‘ptrdiff_t’ does not name a type
+  125 |   template<typename _Category, typename _Tp, typename _Distance = ptrdiff_t,
+      |                                                                   ^~~~~~~~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:65,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/stl_iterator_base_types.h:1:1: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+  +++ |+#include <cstddef>
+    1 | // Types used in iterator implementation -*- C++ -*-
+In file included from /usr/include/c++/11/bits/stl_algobase.h:65,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/stl_iterator_base_types.h:214:15: error: ‘ptrdiff_t’ does not name a type
+  214 |       typedef ptrdiff_t                   difference_type;
+      |               ^~~~~~~~~
+/usr/include/c++/11/bits/stl_iterator_base_types.h:214:15: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+/usr/include/c++/11/bits/stl_iterator_base_types.h:225:15: error: ‘ptrdiff_t’ does not name a type
+  225 |       typedef ptrdiff_t                   difference_type;
+      |               ^~~~~~~~~
+/usr/include/c++/11/bits/stl_iterator_base_types.h:225:15: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+In file included from /usr/include/c++/11/bits/stl_algobase.h:66,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:110:5: error: ‘ptrdiff_t’ does not name a type
+  110 |     ptrdiff_t
+      |     ^~~~~~~~~
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:66:1: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+   65 | #include <debug/assertions.h>
+  +++ |+#include <cstddef>
+   66 | 
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:116:5: error: ‘ptrdiff_t’ does not name a type
+  116 |     ptrdiff_t
+      |     ^~~~~~~~~
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:116:5: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+In file included from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/stl_algobase.h: In static member function ‘static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*)’:
+/usr/include/c++/11/bits/stl_algobase.h:429:17: error: ‘ptrdiff_t’ does not name a type
+  429 |           const ptrdiff_t _Num = __last - __first;
+      |                 ^~~~~~~~~
+/usr/include/c++/11/bits/stl_algobase.h:72:1: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+   71 | #include <bits/predefined_ops.h>
+  +++ |+#include <cstddef>
+   72 | #if __cplusplus >= 201103L
+/usr/include/c++/11/bits/stl_algobase.h:430:15: error: ‘_Num’ was not declared in this scope
+  430 |           if (_Num)
+      |               ^~~~
+/usr/include/c++/11/bits/stl_algobase.h:432:29: error: ‘_Num’ was not declared in this scope
+  432 |           return __result + _Num;
+      |                             ^~~~
+/usr/include/c++/11/bits/stl_algobase.h: In static member function ‘static _Tp* std::__copy_move_backward<_IsMove, true, std::random_access_iterator_tag>::__copy_move_b(const _Tp*, const _Tp*, _Tp*)’:
+/usr/include/c++/11/bits/stl_algobase.h:740:17: error: ‘ptrdiff_t’ does not name a type
+  740 |           const ptrdiff_t _Num = __last - __first;
+      |                 ^~~~~~~~~
+/usr/include/c++/11/bits/stl_algobase.h:740:17: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+/usr/include/c++/11/bits/stl_algobase.h:741:15: error: ‘_Num’ was not declared in this scope
+  741 |           if (_Num)
+      |               ^~~~
+/usr/include/c++/11/bits/stl_algobase.h:743:29: error: ‘_Num’ was not declared in this scope
+  743 |           return __result - _Num;
+      |                             ^~~~
+/usr/include/c++/11/bits/stl_algobase.h: At global scope:
+/usr/include/c++/11/bits/stl_algobase.h:1349:16: error: ‘ptrdiff_t’ does not name a type
+ 1349 |         static ptrdiff_t
+      |                ^~~~~~~~~
+/usr/include/c++/11/bits/stl_algobase.h:1349:16: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+In file included from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/char_traits.h:114:66: error: ‘std::size_t’ has not been declared
+  114 |       compare(const char_type* __s1, const char_type* __s2, std::size_t __n);
+      |                                                                  ^~~~~~
+/usr/include/c++/11/bits/char_traits.h:116:40: error: ‘size_t’ in namespace ‘std’ does not name a type
+  116 |       static _GLIBCXX14_CONSTEXPR std::size_t
+      |                                        ^~~~~~
+/usr/include/c++/11/bits/char_traits.h:120:39: error: ‘std::size_t’ has not been declared
+  120 |       find(const char_type* __s, std::size_t __n, const char_type& __a);
+      |                                       ^~~~~~
+/usr/include/c++/11/bits/char_traits.h:123:57: error: ‘std::size_t’ has not been declared
+  123 |       move(char_type* __s1, const char_type* __s2, std::size_t __n);
+      |                                                         ^~~~~~
+/usr/include/c++/11/bits/char_traits.h:126:57: error: ‘std::size_t’ has not been declared
+  126 |       copy(char_type* __s1, const char_type* __s2, std::size_t __n);
+      |                                                         ^~~~~~
+/usr/include/c++/11/bits/char_traits.h:129:35: error: ‘std::size_t’ has not been declared
+  129 |       assign(char_type* __s, std::size_t __n, char_type __a);
+      |                                   ^~~~~~
+/usr/include/c++/11/bits/char_traits.h:155:64: error: ‘std::size_t’ has not been declared
+  155 |     compare(const char_type* __s1, const char_type* __s2, std::size_t __n)
+      |                                                                ^~~~~~
+/usr/include/c++/11/bits/char_traits.h: In static member function ‘static int __gnu_cxx::char_traits<_CharT>::compare(const char_type*, const char_type*, int)’:
+/usr/include/c++/11/bits/char_traits.h:157:17: error: ‘size_t’ is not a member of ‘std’; did you mean ‘size_t’?
+  157 |       for (std::size_t __i = 0; __i < __n; ++__i)
+      |                 ^~~~~~
+In file included from /usr/include/wchar.h:35,
+                 from /usr/include/c++/11/cwchar:44,
+                 from /usr/include/c++/11/bits/postypes.h:40,
+                 from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:209:23: note: ‘size_t’ declared here
+  209 | typedef __SIZE_TYPE__ size_t;
+      |                       ^~~~~~
+In file included from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/char_traits.h:157:33: error: ‘__i’ was not declared in this scope; did you mean ‘__n’?
+  157 |       for (std::size_t __i = 0; __i < __n; ++__i)
+      |                                 ^~~
+      |                                 __n
+/usr/include/c++/11/bits/char_traits.h: At global scope:
+/usr/include/c++/11/bits/char_traits.h:166:31: error: ‘size_t’ in namespace ‘std’ does not name a type
+  166 |     _GLIBCXX14_CONSTEXPR std::size_t
+      |                               ^~~~~~
+/usr/include/c++/11/bits/char_traits.h:179:37: error: ‘std::size_t’ has not been declared
+  179 |     find(const char_type* __s, std::size_t __n, const char_type& __a)
+      |                                     ^~~~~~
+/usr/include/c++/11/bits/char_traits.h: In static member function ‘static const char_type* __gnu_cxx::char_traits<_CharT>::find(const char_type*, int, const char_type&)’:
+/usr/include/c++/11/bits/char_traits.h:181:17: error: ‘size_t’ is not a member of ‘std’; did you mean ‘size_t’?
+  181 |       for (std::size_t __i = 0; __i < __n; ++__i)
+      |                 ^~~~~~
+In file included from /usr/include/wchar.h:35,
+                 from /usr/include/c++/11/cwchar:44,
+                 from /usr/include/c++/11/bits/postypes.h:40,
+                 from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:209:23: note: ‘size_t’ declared here
+  209 | typedef __SIZE_TYPE__ size_t;
+      |                       ^~~~~~
+In file included from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/char_traits.h:181:33: error: ‘__i’ was not declared in this scope; did you mean ‘__s’?
+  181 |       for (std::size_t __i = 0; __i < __n; ++__i)
+      |                                 ^~~
+      |                                 __s
+/usr/include/c++/11/bits/char_traits.h: At global scope:
+/usr/include/c++/11/bits/char_traits.h:191:55: error: ‘std::size_t’ has not been declared
+  191 |     move(char_type* __s1, const char_type* __s2, std::size_t __n)
+      |                                                       ^~~~~~
+/usr/include/c++/11/bits/char_traits.h:241:55: error: ‘std::size_t’ has not been declared
+  241 |     copy(char_type* __s1, const char_type* __s2, std::size_t __n)
+      |                                                       ^~~~~~
+/usr/include/c++/11/bits/char_traits.h:252:33: error: ‘std::size_t’ has not been declared
+  252 |     assign(char_type* __s, std::size_t __n, char_type __a)
+      |                                 ^~~~~~
+In file included from /usr/include/c++/11/ext/new_allocator.h:33,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/new:126:26: error: declaration of ‘operator new’ as non-function
+  126 | _GLIBCXX_NODISCARD void* operator new(std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+      |                          ^~~~~~~~
+/usr/include/c++/11/new:126:44: error: ‘size_t’ is not a member of ‘std’; did you mean ‘size_t’?
+  126 | _GLIBCXX_NODISCARD void* operator new(std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+      |                                            ^~~~~~
+In file included from /usr/include/wchar.h:35,
+                 from /usr/include/c++/11/cwchar:44,
+                 from /usr/include/c++/11/bits/postypes.h:40,
+                 from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:209:23: note: ‘size_t’ declared here
+  209 | typedef __SIZE_TYPE__ size_t;
+      |                       ^~~~~~
+In file included from /usr/include/c++/11/ext/new_allocator.h:33,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/new:128:26: error: declaration of ‘operator new []’ as non-function
+  128 | _GLIBCXX_NODISCARD void* operator new[](std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+      |                          ^~~~~~~~
+/usr/include/c++/11/new:128:46: error: ‘size_t’ is not a member of ‘std’; did you mean ‘size_t’?
+  128 | _GLIBCXX_NODISCARD void* operator new[](std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+      |                                              ^~~~~~
+In file included from /usr/include/wchar.h:35,
+                 from /usr/include/c++/11/cwchar:44,
+                 from /usr/include/c++/11/bits/postypes.h:40,
+                 from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:209:23: note: ‘size_t’ declared here
+  209 | typedef __SIZE_TYPE__ size_t;
+      |                       ^~~~~~
+In file included from /usr/include/c++/11/ext/new_allocator.h:33,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/new:140:26: error: declaration of ‘operator new’ as non-function
+  140 | _GLIBCXX_NODISCARD void* operator new(std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+      |                          ^~~~~~~~
+/usr/include/c++/11/new:140:44: error: ‘size_t’ is not a member of ‘std’; did you mean ‘size_t’?
+  140 | _GLIBCXX_NODISCARD void* operator new(std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+      |                                            ^~~~~~
+In file included from /usr/include/wchar.h:35,
+                 from /usr/include/c++/11/cwchar:44,
+                 from /usr/include/c++/11/bits/postypes.h:40,
+                 from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:209:23: note: ‘size_t’ declared here
+  209 | typedef __SIZE_TYPE__ size_t;
+      |                       ^~~~~~
+In file included from /usr/include/c++/11/ext/new_allocator.h:33,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/new:140:52: error: expected primary-expression before ‘const’
+  140 | _GLIBCXX_NODISCARD void* operator new(std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+      |                                                    ^~~~~
+/usr/include/c++/11/new:142:26: error: declaration of ‘operator new []’ as non-function
+  142 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+      |                          ^~~~~~~~
+/usr/include/c++/11/new:142:46: error: ‘size_t’ is not a member of ‘std’; did you mean ‘size_t’?
+  142 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+      |                                              ^~~~~~
+In file included from /usr/include/wchar.h:35,
+                 from /usr/include/c++/11/cwchar:44,
+                 from /usr/include/c++/11/bits/postypes.h:40,
+                 from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:209:23: note: ‘size_t’ declared here
+  209 | typedef __SIZE_TYPE__ size_t;
+      |                       ^~~~~~
+In file included from /usr/include/c++/11/ext/new_allocator.h:33,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/new:142:54: error: expected primary-expression before ‘const’
+  142 | _GLIBCXX_NODISCARD void* operator new[](std::size_t, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
+      |                                                      ^~~~~
+/usr/include/c++/11/new:174:33: error: declaration of ‘operator new’ as non-function
+  174 | _GLIBCXX_NODISCARD inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+      |                                 ^~~~~~~~
+/usr/include/c++/11/new:174:51: error: ‘size_t’ is not a member of ‘std’; did you mean ‘size_t’?
+  174 | _GLIBCXX_NODISCARD inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+      |                                                   ^~~~~~
+In file included from /usr/include/wchar.h:35,
+                 from /usr/include/c++/11/cwchar:44,
+                 from /usr/include/c++/11/bits/postypes.h:40,
+                 from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:209:23: note: ‘size_t’ declared here
+  209 | typedef __SIZE_TYPE__ size_t;
+      |                       ^~~~~~
+In file included from /usr/include/c++/11/ext/new_allocator.h:33,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/new:174:59: error: expected primary-expression before ‘void’
+  174 | _GLIBCXX_NODISCARD inline void* operator new(std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+      |                                                           ^~~~
+/usr/include/c++/11/new:176:33: error: declaration of ‘operator new []’ as non-function
+  176 | _GLIBCXX_NODISCARD inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+      |                                 ^~~~~~~~
+/usr/include/c++/11/new:176:53: error: ‘size_t’ is not a member of ‘std’; did you mean ‘size_t’?
+  176 | _GLIBCXX_NODISCARD inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+      |                                                     ^~~~~~
+In file included from /usr/include/wchar.h:35,
+                 from /usr/include/c++/11/cwchar:44,
+                 from /usr/include/c++/11/bits/postypes.h:40,
+                 from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:209:23: note: ‘size_t’ declared here
+  209 | typedef __SIZE_TYPE__ size_t;
+      |                       ^~~~~~
+In file included from /usr/include/c++/11/ext/new_allocator.h:33,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/new:176:61: error: expected primary-expression before ‘void’
+  176 | _GLIBCXX_NODISCARD inline void* operator new[](std::size_t, void* __p) _GLIBCXX_USE_NOEXCEPT
+      |                                                             ^~~~
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/ext/new_allocator.h:59:20: error: ‘size_t’ in namespace ‘std’ does not name a type
+   59 |       typedef std::size_t     size_type;
+      |                    ^~~~~~
+/usr/include/c++/11/ext/new_allocator.h:60:20: error: ‘ptrdiff_t’ in namespace ‘std’ does not name a type
+   60 |       typedef std::ptrdiff_t  difference_type;
+      |                    ^~~~~~~~~
+/usr/include/c++/11/ext/new_allocator.h:103:16: error: ‘size_type’ has not been declared
+  103 |       allocate(size_type __n, const void* = static_cast<const void*>(0))
+      |                ^~~~~~~~~
+/usr/include/c++/11/ext/new_allocator.h:132:28: error: ‘size_type’ has not been declared
+  132 |       deallocate(_Tp* __p, size_type __t __attribute__ ((__unused__)))
+      |                            ^~~~~~~~~
+/usr/include/c++/11/ext/new_allocator.h:153:7: error: ‘size_type’ does not name a type; did you mean ‘size_t’?
+  153 |       size_type
+      |       ^~~~~~~~~
+      |       size_t
+/usr/include/c++/11/ext/new_allocator.h:196:26: error: ‘size_type’ does not name a type; did you mean ‘size_t’?
+  196 |       _GLIBCXX_CONSTEXPR size_type
+      |                          ^~~~~~~~~
+      |                          size_t
+/usr/include/c++/11/ext/new_allocator.h: In member function ‘_Tp* __gnu_cxx::new_allocator<_Tp>::allocate(int, const void*)’:
+/usr/include/c++/11/ext/new_allocator.h:115:29: error: ‘size_t’ is not a member of ‘std’; did you mean ‘size_t’?
+  115 |             if (__n > (std::size_t(-1) / sizeof(_Tp)))
+      |                             ^~~~~~
+In file included from /usr/include/wchar.h:35,
+                 from /usr/include/c++/11/cwchar:44,
+                 from /usr/include/c++/11/bits/postypes.h:40,
+                 from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:209:23: note: ‘size_t’ declared here
+  209 | typedef __SIZE_TYPE__ size_t;
+      |                       ^~~~~~
+In file included from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/allocator.h: At global scope:
+/usr/include/c++/11/bits/allocator.h:77:15: error: ‘ptrdiff_t’ does not name a type
+   77 |       typedef ptrdiff_t   difference_type;
+      |               ^~~~~~~~~
+/usr/include/c++/11/bits/allocator.h:47:1: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+   46 | #include <bits/c++allocator.h> // Define the base class to std::allocator.
+  +++ |+#include <cstddef>
+   47 | #include <bits/memoryfwd.h>
+/usr/include/c++/11/bits/allocator.h:129:15: error: ‘ptrdiff_t’ does not name a type
+  129 |       typedef ptrdiff_t  difference_type;
+      |               ^~~~~~~~~
+/usr/include/c++/11/bits/allocator.h:129:15: note: ‘ptrdiff_t’ is defined in header ‘<cstddef>’; did you forget to ‘#include <cstddef>’?
+In file included from /usr/include/c++/11/string:44,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/ostream_insert.h:46:40: error: ‘streamsize’ has not been declared
+   46 |                     const _CharT* __s, streamsize __n)
+      |                                        ^~~~~~~~~~
+/usr/include/c++/11/bits/ostream_insert.h: In function ‘void std::__ostream_write(std::basic_ostream<_CharT, _Traits>&, const _CharT*, int)’:
+/usr/include/c++/11/bits/ostream_insert.h:51:13: error: ‘streamsize’ does not name a type
+   51 |       const streamsize __put = __out.rdbuf()->sputn(__s, __n);
+      |             ^~~~~~~~~~
+/usr/include/c++/11/bits/ostream_insert.h:52:11: error: ‘__put’ was not declared in this scope; did you mean ‘__out’?
+   52 |       if (__put != __n)
+      |           ^~~~~
+      |           __out
+/usr/include/c++/11/bits/ostream_insert.h: At global scope:
+/usr/include/c++/11/bits/ostream_insert.h:58:59: error: ‘streamsize’ has not been declared
+   58 |     __ostream_fill(basic_ostream<_CharT, _Traits>& __out, streamsize __n)
+      |                                                           ^~~~~~~~~~
+/usr/include/c++/11/bits/ostream_insert.h:78:41: error: ‘streamsize’ has not been declared
+   78 |                      const _CharT* __s, streamsize __n)
+      |                                         ^~~~~~~~~~
+/usr/include/c++/11/bits/ostream_insert.h: In function ‘std::basic_ostream<_CharT, _Traits>& std::__ostream_insert(std::basic_ostream<_CharT, _Traits>&, const _CharT*, int)’:
+/usr/include/c++/11/bits/ostream_insert.h:88:21: error: ‘streamsize’ does not name a type
+   88 |               const streamsize __w = __out.width();
+      |                     ^~~~~~~~~~
+/usr/include/c++/11/bits/ostream_insert.h:89:19: error: ‘__w’ was not declared in this scope; did you mean ‘__s’?
+   89 |               if (__w > __n)
+      |                   ^~~
+      |                   __s
+/usr/include/c++/11/bits/ostream_insert.h: At global scope:
+/usr/include/c++/11/bits/ostream_insert.h:119:68: error: ‘streamsize’ has not been declared
+  119 |   extern template ostream& __ostream_insert(ostream&, const char*, streamsize);
+      |                                                                    ^~~~~~~~~~
+/usr/include/c++/11/bits/ostream_insert.h:123:46: error: ‘streamsize’ has not been declared
+  123 |                                              streamsize);
+      |                                              ^~~~~~~~~~
+In file included from /usr/include/c++/11/string:56,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/basic_string.tcc: In function ‘std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’:
+/usr/include/c++/11/bits/basic_string.tcc:1507:21: error: ‘streamsize’ does not name a type
+ 1507 |               const streamsize __w = __in.width();
+      |                     ^~~~~~~~~~
+/usr/include/c++/11/bits/basic_string.tcc:1508:39: error: ‘__w’ was not declared in this scope; did you mean ‘__n’?
+ 1508 |               const __size_type __n = __w > 0 ? static_cast<__size_type>(__w)
+      |                                       ^~~
+      |                                       __n
+In file included from /usr/include/c++/11/bits/basic_string.h:40,
+                 from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/ext/alloc_traits.h: In instantiation of ‘struct __gnu_cxx::__alloc_traits<std::allocator<char>, char>’:
+/usr/include/c++/11/bits/basic_string.h:88:24:   required from ‘class std::__cxx11::basic_string<char>’
+/usr/include/c++/11/bits/basic_string.tcc:1627:25:   required from here
+/usr/include/c++/11/ext/alloc_traits.h:129:53: error: no type named ‘difference_type’ in ‘class std::allocator<char>’
+  129 |     typedef typename _Alloc::difference_type        difference_type;
+      |                                                     ^~~~~~~~~~~~~~~
+/usr/include/c++/11/ext/alloc_traits.h: In instantiation of ‘struct __gnu_cxx::__alloc_traits<std::allocator<wchar_t>, wchar_t>’:
+/usr/include/c++/11/bits/basic_string.h:88:24:   required from ‘class std::__cxx11::basic_string<wchar_t>’
+/usr/include/c++/11/bits/basic_string.tcc:1650:25:   required from here
+/usr/include/c++/11/ext/alloc_traits.h:129:53: error: no type named ‘difference_type’ in ‘class std::allocator<wchar_t>’
+In file included from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/ios_base.h: At global scope:
+/usr/include/c++/11/bits/ios_base.h:545:5: error: ‘streamsize’ does not name a type
+  545 |     streamsize          _M_precision;
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/ios_base.h:546:5: error: ‘streamsize’ does not name a type
+  546 |     streamsize          _M_width;
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/ios_base.h:718:5: error: ‘streamsize’ does not name a type
+  718 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/ios_base.h:727:5: error: ‘streamsize’ does not name a type
+  727 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/ios_base.h:741:5: error: ‘streamsize’ does not name a type
+  741 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/ios_base.h:750:5: error: ‘streamsize’ does not name a type
+  750 |     streamsize
+      |     ^~~~~~~~~~
+In file included from /usr/include/c++/11/ios:43,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/streambuf:52:5: error: ‘streamsize’ does not name a type
+   52 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/streambuf:149:14: error: ‘streamsize’ does not name a type
+  149 |       friend streamsize
+      |              ^~~~~~~~~~
+/usr/include/c++/11/streambuf:169:54: error: ‘streamsize’ has not been declared
+  169 |       friend void __istream_extract(istream&, char*, streamsize);
+      |                                                      ^~~~~~~~~~
+/usr/include/c++/11/streambuf:244:33: error: ‘streamsize’ has not been declared
+  244 |       pubsetbuf(char_type* __s, streamsize __n)
+      |                                 ^~~~~~~~~~
+/usr/include/c++/11/streambuf:288:7: error: ‘streamsize’ does not name a type
+  288 |       streamsize
+      |       ^~~~~~~~~~
+/usr/include/c++/11/streambuf:361:7: error: ‘streamsize’ does not name a type
+  361 |       streamsize
+      |       ^~~~~~~~~~
+/usr/include/c++/11/streambuf:454:7: error: ‘streamsize’ does not name a type
+  454 |       streamsize
+      |       ^~~~~~~~~~
+/usr/include/c++/11/streambuf:596:26: error: ‘streamsize’ has not been declared
+  596 |       setbuf(char_type*, streamsize)
+      |                          ^~~~~~~~~~
+/usr/include/c++/11/streambuf:653:15: error: ‘streamsize’ does not name a type
+  653 |       virtual streamsize
+      |               ^~~~~~~~~~
+/usr/include/c++/11/streambuf:669:15: error: ‘streamsize’ does not name a type
+  669 |       virtual streamsize
+      |               ^~~~~~~~~~
+/usr/include/c++/11/streambuf:746:15: error: ‘streamsize’ does not name a type
+  746 |       virtual streamsize
+      |               ^~~~~~~~~~
+/usr/include/c++/11/streambuf:800:20: error: ‘streamsize’ has not been declared
+  800 |       __safe_gbump(streamsize __n) { _M_in_cur += __n; }
+      |                    ^~~~~~~~~~
+/usr/include/c++/11/streambuf:803:20: error: ‘streamsize’ has not been declared
+  803 |       __safe_pbump(streamsize __n) { _M_out_cur += __n; }
+      |                    ^~~~~~~~~~
+/usr/include/c++/11/streambuf:843:5: error: ‘streamsize’ does not name a type
+  843 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/streambuf:848:5: error: ‘streamsize’ does not name a type
+  848 |     streamsize
+      |     ^~~~~~~~~~
+In file included from /usr/include/c++/11/streambuf:858,
+                 from /usr/include/c++/11/ios:43,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/streambuf.tcc:44:5: error: ‘streamsize’ does not name a type
+   44 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:78:5: error: ‘streamsize’ does not name a type
+   78 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:115:5: error: ‘streamsize’ does not name a type
+  115 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:138:12: error: ‘streamsize’ does not name a type
+  138 |     inline streamsize
+      |            ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:151:5: error: ‘streamsize’ is not a template function
+  151 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:151:15: error: expected ‘;’ before ‘__copy_streambufs’
+  151 |     streamsize
+      |               ^
+      |               ;
+  152 |     __copy_streambufs(basic_streambuf<char>*,
+      |     ~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:155:5: error: ‘streamsize’ is not a template function
+  155 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:155:15: error: expected ‘;’ before ‘__copy_streambufs_eof’
+  155 |     streamsize
+      |               ^
+      |               ;
+  156 |     __copy_streambufs_eof(basic_streambuf<char>*,
+      |     ~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:162:5: error: ‘streamsize’ is not a template function
+  162 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:162:15: error: expected ‘;’ before ‘__copy_streambufs’
+  162 |     streamsize
+      |               ^
+      |               ;
+  163 |     __copy_streambufs(basic_streambuf<wchar_t>*,
+      |     ~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:166:5: error: ‘streamsize’ is not a template function
+  166 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf.tcc:166:15: error: expected ‘;’ before ‘__copy_streambufs_eof’
+  166 |     streamsize
+      |               ^
+      |               ;
+  167 |     __copy_streambufs_eof(basic_streambuf<wchar_t>*,
+      |     ~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_facets.h:48,
+                 from /usr/include/c++/11/bits/basic_ios.h:37,
+                 from /usr/include/c++/11/ios:44,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/streambuf_iterator.h:311:34: error: ‘streamsize’ has not been declared
+  311 |       _M_put(const _CharT* __ws, streamsize __len)
+      |                                  ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf_iterator.h: In function ‘typename __gnu_cxx::__enable_if<std::__is_char<_CharT>::__value, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> > >::__type std::__copy_move_a2(_CharT*, _CharT*, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> >)’:
+/usr/include/c++/11/bits/streambuf_iterator.h:345:13: error: ‘streamsize’ does not name a type
+  345 |       const streamsize __num = __last - __first;
+      |             ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf_iterator.h:346:11: error: ‘__num’ was not declared in this scope
+  346 |       if (__num > 0)
+      |           ^~~~~
+/usr/include/c++/11/bits/streambuf_iterator.h: In function ‘typename __gnu_cxx::__enable_if<std::__is_char<_CharT>::__value, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> > >::__type std::__copy_move_a2(const _CharT*, const _CharT*, std::ostreambuf_iterator<_CharT, std::char_traits<_CharT> >)’:
+/usr/include/c++/11/bits/streambuf_iterator.h:357:13: error: ‘streamsize’ does not name a type
+  357 |       const streamsize __num = __last - __first;
+      |             ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf_iterator.h:358:11: error: ‘__num’ was not declared in this scope
+  358 |       if (__num > 0)
+      |           ^~~~~
+/usr/include/c++/11/bits/streambuf_iterator.h: In function ‘typename __gnu_cxx::__enable_if<std::__is_char<_CharT>::__value, _CharT*>::__type std::__copy_move_a2(std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >, std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >, _CharT*)’:
+/usr/include/c++/11/bits/streambuf_iterator.h:380:21: error: ‘streamsize’ does not name a type
+  380 |               const streamsize __n = __sb->egptr() - __sb->gptr();
+      |                     ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf_iterator.h:381:19: error: ‘__n’ was not declared in this scope; did you mean ‘__c’?
+  381 |               if (__n > 1)
+      |                   ^~~
+      |                   __c
+/usr/include/c++/11/bits/streambuf_iterator.h: In function ‘typename __gnu_cxx::__enable_if<std::__is_char<_CharT2>::__value, std::istreambuf_iterator<_CharT, std::char_traits<_CharT> > >::__type std::find(std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >, std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >, const _CharT2&)’:
+/usr/include/c++/11/bits/streambuf_iterator.h:438:15: error: ‘streamsize’ was not declared in this scope
+  438 |               streamsize __n = __sb->egptr() - __sb->gptr();
+      |               ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf_iterator.h:439:19: error: ‘__n’ was not declared in this scope; did you mean ‘__c’?
+  439 |               if (__n > 1)
+      |                   ^~~
+      |                   __c
+/usr/include/c++/11/bits/streambuf_iterator.h: In function ‘typename __gnu_cxx::__enable_if<std::__is_char<_CharT2>::__value, void>::__type std::advance(std::istreambuf_iterator<_CharT, std::char_traits<_CharT> >&, _Distance)’:
+/usr/include/c++/11/bits/streambuf_iterator.h:480:11: error: ‘streamsize’ was not declared in this scope
+  480 |           streamsize __size = __sb->egptr() - __sb->gptr();
+      |           ^~~~~~~~~~
+/usr/include/c++/11/bits/streambuf_iterator.h:481:15: error: ‘__size’ was not declared in this scope; did you mean ‘dysize’?
+  481 |           if (__size > __n)
+      |               ^~~~~~
+      |               dysize
+/usr/include/c++/11/bits/streambuf_iterator.h:487:30: error: ‘__size’ was not declared in this scope; did you mean ‘dysize’?
+  487 |           __sb->__safe_gbump(__size);
+      |                              ^~~~~~
+      |                              dysize
+In file included from /usr/include/c++/11/bits/basic_ios.h:37,
+                 from /usr/include/c++/11/ios:44,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/locale_facets.h: At global scope:
+/usr/include/c++/11/bits/locale_facets.h:102:36: error: ‘streamsize’ has not been declared
+  102 |              const _CharT* __olds, streamsize __newlen, streamsize __oldlen);
+      |                                    ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.h:102:57: error: ‘streamsize’ has not been declared
+  102 |              const _CharT* __olds, streamsize __newlen, streamsize __oldlen);
+      |                                                         ^~~~~~~~~~
+In file included from /usr/include/c++/11/bits/basic_ios.h:37,
+                 from /usr/include/c++/11/ios:44,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/locale_facets.h:2508:32: error: ‘streamsize’ has not been declared
+ 2508 |       _M_pad(char_type __fill, streamsize __w, ios_base& __io,
+      |                                ^~~~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_facets.h:2682,
+                 from /usr/include/c++/11/bits/basic_ios.h:37,
+                 from /usr/include/c++/11/ios:44,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/locale_facets.tcc:798:27: error: ‘streamsize’ has not been declared
+  798 |     _M_pad(_CharT __fill, streamsize __w, ios_base& __io,
+      |                           ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc: In member function ‘_OutIter std::num_put<_CharT, _OutIter>::_M_insert_int(_OutIter, std::ios_base&, _CharT, _ValueT) const’:
+/usr/include/c++/11/bits/locale_facets.tcc:939:15: error: ‘streamsize’ does not name a type
+  939 |         const streamsize __w = __io.width();
+      |               ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:940:13: error: ‘__w’ was not declared in this scope; did you mean ‘__u’?
+  940 |         if (__w > static_cast<streamsize>(__len))
+      |             ^~~
+      |             __u
+/usr/include/c++/11/bits/locale_facets.tcc:940:31: error: ‘streamsize’ does not name a type
+  940 |         if (__w > static_cast<streamsize>(__len))
+      |                               ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:947:14: error: ‘class std::ios_base’ has no member named ‘width’
+  947 |         __io.width(0);
+      |              ^~~~~
+/usr/include/c++/11/bits/locale_facets.tcc: In member function ‘_OutIter std::num_put<_CharT, _OutIter>::_M_insert_float(_OutIter, std::ios_base&, _CharT, char, _ValueT) const’:
+/usr/include/c++/11/bits/locale_facets.tcc:1002:15: error: ‘streamsize’ does not name a type
+ 1002 |         const streamsize __prec = __io.precision() < 0 ? 6 : __io.precision();
+      |               ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1024:49: error: ‘__prec’ was not declared in this scope
+ 1024 |                                         __fbuf, __prec, __v);
+      |                                                 ^~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1036:53: error: ‘__prec’ was not declared in this scope
+ 1036 |                                             __fbuf, __prec, __v);
+      |                                                     ^~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1089:13: error: ‘streamsize’ was not declared in this scope
+ 1089 |             streamsize __off = 0;
+      |             ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1092:17: error: ‘__off’ was not declared in this scope; did you mean ‘__off_t’?
+ 1092 |                 __off = 1;
+      |                 ^~~~~
+      |                 __off_t
+/usr/include/c++/11/bits/locale_facets.tcc:1098:66: error: ‘__off’ was not declared in this scope; did you mean ‘__off_t’?
+ 1098 |                            __lc->_M_thousands_sep, __wp, __ws2 + __off,
+      |                                                                  ^~~~~
+      |                                                                  __off_t
+/usr/include/c++/11/bits/locale_facets.tcc:1106:15: error: ‘streamsize’ does not name a type
+ 1106 |         const streamsize __w = __io.width();
+      |               ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1107:13: error: ‘__w’ was not declared in this scope; did you mean ‘__p’?
+ 1107 |         if (__w > static_cast<streamsize>(__len))
+      |             ^~~
+      |             __p
+/usr/include/c++/11/bits/locale_facets.tcc:1107:31: error: ‘streamsize’ does not name a type
+ 1107 |         if (__w > static_cast<streamsize>(__len))
+      |                               ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1114:14: error: ‘class std::ios_base’ has no member named ‘width’
+ 1114 |         __io.width(0);
+      |              ^~~~~
+/usr/include/c++/11/bits/locale_facets.tcc: In member function ‘virtual _OutIter std::num_put<_CharT, _OutIter>::do_put(std::num_put<_CharT, _OutIter>::iter_type, std::ios_base&, std::num_put<_CharT, _OutIter>::char_type, bool) const’:
+/usr/include/c++/11/bits/locale_facets.tcc:1144:17: error: ‘streamsize’ does not name a type
+ 1144 |           const streamsize __w = __io.width();
+      |                 ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1145:15: error: ‘__w’ was not declared in this scope; did you mean ‘__s’?
+ 1145 |           if (__w > static_cast<streamsize>(__len))
+      |               ^~~
+      |               __s
+/usr/include/c++/11/bits/locale_facets.tcc:1145:33: error: ‘streamsize’ does not name a type
+ 1145 |           if (__w > static_cast<streamsize>(__len))
+      |                                 ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1147:21: error: ‘streamsize’ does not name a type
+ 1147 |               const streamsize __plen = __w - __len;
+      |                     ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1150:59: error: ‘__plen’ was not declared in this scope; did you mean ‘__len’?
+ 1150 |                                                         * __plen));
+      |                                                           ^~~~~~
+      |                                                           __len
+/usr/include/c++/11/bits/locale_facets.tcc:1153:20: error: ‘class std::ios_base’ has no member named ‘width’
+ 1153 |               __io.width(0);
+      |                    ^~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1167:16: error: ‘class std::ios_base’ has no member named ‘width’
+ 1167 |           __io.width(0);
+      |                ^~~~~
+/usr/include/c++/11/bits/locale_facets.tcc: At global scope:
+/usr/include/c++/11/bits/locale_facets.tcc:1237:36: error: ‘streamsize’ has not been declared
+ 1237 |                                    streamsize __newlen, streamsize __oldlen)
+      |                                    ^~~~~~~~~~
+/usr/include/c++/11/bits/locale_facets.tcc:1237:57: error: ‘streamsize’ has not been declared
+ 1237 |                                    streamsize __newlen, streamsize __oldlen)
+      |                                                         ^~~~~~~~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/ostream:324:38: error: ‘streamsize’ has not been declared
+  324 |       _M_write(const char_type* __s, streamsize __n)
+      |                                      ^~~~~~~~~~
+/usr/include/c++/11/ostream:348:35: error: ‘streamsize’ has not been declared
+  348 |       write(const char_type* __s, streamsize __n);
+      |                                   ^~~~~~~~~~
+/usr/include/c++/11/ostream: In member function ‘void std::basic_ostream<_CharT, _Traits>::_M_write(const char_type*, int)’:
+/usr/include/c++/11/ostream:326:15: error: ‘streamsize’ does not name a type
+  326 |         const streamsize __put = this->rdbuf()->sputn(__s, __n);
+      |               ^~~~~~~~~~
+/usr/include/c++/11/ostream:327:13: error: ‘__put’ was not declared in this scope; did you mean ‘put’?
+  327 |         if (__put != __n)
+      |             ^~~~~
+      |             put
+/usr/include/c++/11/ostream: In function ‘std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)’:
+/usr/include/c++/11/ostream:600:38: error: ‘streamsize’ does not name a type
+  600 |                          static_cast<streamsize>(_Traits::length(__s)));
+      |                                      ^~~~~~~~~~
+/usr/include/c++/11/ostream: In function ‘std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)’:
+/usr/include/c++/11/ostream:617:38: error: ‘streamsize’ does not name a type
+  617 |                          static_cast<streamsize>(_Traits::length(__s)));
+      |                                      ^~~~~~~~~~
+In file included from /usr/include/c++/11/ostream:829,
+                 from /usr/include/c++/11/iostream:39,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/ostream.tcc: At global scope:
+/usr/include/c++/11/bits/ostream.tcc:183:30: error: ‘streamsize’ has not been declared
+  183 |     write(const _CharT* __s, streamsize __n)
+      |                              ^~~~~~~~~~
+In file included from /usr/include/c++/11/iostream:40,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/istream:82:7: error: ‘streamsize’ does not name a type
+   82 |       streamsize                _M_gcount;
+      |       ^~~~~~~~~~
+/usr/include/c++/11/istream:268:7: error: ‘streamsize’ does not name a type
+  268 |       streamsize
+      |       ^~~~~~~~~~
+/usr/include/c++/11/istream:343:27: error: ‘streamsize’ has not been declared
+  343 |       get(char_type* __s, streamsize __n, char_type __delim);
+      |                           ^~~~~~~~~~
+/usr/include/c++/11/istream:354:27: error: ‘streamsize’ has not been declared
+  354 |       get(char_type* __s, streamsize __n)
+      |                           ^~~~~~~~~~
+/usr/include/c++/11/istream:416:31: error: ‘streamsize’ has not been declared
+  416 |       getline(char_type* __s, streamsize __n, char_type __delim);
+      |                               ^~~~~~~~~~
+/usr/include/c++/11/istream:427:31: error: ‘streamsize’ has not been declared
+  427 |       getline(char_type* __s, streamsize __n)
+      |                               ^~~~~~~~~~
+/usr/include/c++/11/istream:451:14: error: ‘streamsize’ has not been declared
+  451 |       ignore(streamsize __n, int_type __delim);
+      |              ^~~~~~~~~~
+/usr/include/c++/11/istream:454:14: error: ‘streamsize’ has not been declared
+  454 |       ignore(streamsize __n);
+      |              ^~~~~~~~~~
+/usr/include/c++/11/istream:486:28: error: ‘streamsize’ has not been declared
+  486 |       read(char_type* __s, streamsize __n);
+      |                            ^~~~~~~~~~
+/usr/include/c++/11/istream:504:7: error: ‘streamsize’ does not name a type
+  504 |       streamsize
+      |       ^~~~~~~~~~
+/usr/include/c++/11/istream: In constructor ‘std::basic_istream<_CharT, _Traits>::basic_istream(std::basic_istream<_CharT, _Traits>::__streambuf_type*)’:
+/usr/include/c++/11/istream:94:9: error: class ‘std::basic_istream<_CharT, _Traits>’ does not have any field named ‘_M_gcount’
+   94 |       : _M_gcount(streamsize(0))
+      |         ^~~~~~~~~
+/usr/include/c++/11/istream:94:19: error: there are no arguments to ‘streamsize’ that depend on a template parameter, so a declaration of ‘streamsize’ must be available [-fpermissive]
+   94 |       : _M_gcount(streamsize(0))
+      |                   ^~~~~~~~~~
+/usr/include/c++/11/istream:94:19: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+/usr/include/c++/11/istream: In destructor ‘virtual std::basic_istream<_CharT, _Traits>::~basic_istream()’:
+/usr/include/c++/11/istream:104:9: error: ‘_M_gcount’ was not declared in this scope
+  104 |       { _M_gcount = streamsize(0); }
+      |         ^~~~~~~~~
+/usr/include/c++/11/istream:104:21: error: there are no arguments to ‘streamsize’ that depend on a template parameter, so a declaration of ‘streamsize’ must be available [-fpermissive]
+  104 |       { _M_gcount = streamsize(0); }
+      |                     ^~~~~~~~~~
+/usr/include/c++/11/istream: In constructor ‘std::basic_istream<_CharT, _Traits>::basic_istream()’:
+/usr/include/c++/11/istream:607:9: error: class ‘std::basic_istream<_CharT, _Traits>’ does not have any field named ‘_M_gcount’
+  607 |       : _M_gcount(streamsize(0))
+      |         ^~~~~~~~~
+/usr/include/c++/11/istream:607:19: error: there are no arguments to ‘streamsize’ that depend on a template parameter, so a declaration of ‘streamsize’ must be available [-fpermissive]
+  607 |       : _M_gcount(streamsize(0))
+      |                   ^~~~~~~~~~
+/usr/include/c++/11/istream: At global scope:
+/usr/include/c++/11/istream:648:29: error: ‘streamsize’ has not been declared
+  648 |     getline(char_type* __s, streamsize __n, char_type __delim);
+      |                             ^~~~~~~~~~
+/usr/include/c++/11/istream:652:5: error: ‘std::basic_istream<char>& std::basic_istream<char>::ignore’ is not a static data member of ‘class std::basic_istream<char>’
+  652 |     basic_istream<char>::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/istream:653:12: error: ‘streamsize’ was not declared in this scope
+  653 |     ignore(streamsize __n);
+      |            ^~~~~~~~~~
+/usr/include/c++/11/istream:657:5: error: ‘std::basic_istream<char>& std::basic_istream<char>::ignore’ is not a static data member of ‘class std::basic_istream<char>’
+  657 |     basic_istream<char>::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/istream:658:12: error: ‘streamsize’ was not declared in this scope
+  658 |     ignore(streamsize __n, int_type __delim);
+      |            ^~~~~~~~~~
+/usr/include/c++/11/istream:658:37: error: expected primary-expression before ‘__delim’
+  658 |     ignore(streamsize __n, int_type __delim);
+      |                                     ^~~~~~~
+/usr/include/c++/11/istream:658:44: error: expression list treated as compound expression in initializer [-fpermissive]
+  658 |     ignore(streamsize __n, int_type __delim);
+      |                                            ^
+/usr/include/c++/11/istream:664:29: error: ‘streamsize’ has not been declared
+  664 |     getline(char_type* __s, streamsize __n, char_type __delim);
+      |                             ^~~~~~~~~~
+/usr/include/c++/11/istream:668:5: error: ‘std::basic_istream<wchar_t>& std::basic_istream<wchar_t>::ignore’ is not a static data member of ‘class std::basic_istream<wchar_t>’
+  668 |     basic_istream<wchar_t>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/istream:669:12: error: ‘streamsize’ was not declared in this scope
+  669 |     ignore(streamsize __n);
+      |            ^~~~~~~~~~
+/usr/include/c++/11/istream:673:5: error: ‘std::basic_istream<wchar_t>& std::basic_istream<wchar_t>::ignore’ is not a static data member of ‘class std::basic_istream<wchar_t>’
+  673 |     basic_istream<wchar_t>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/istream:674:12: error: ‘streamsize’ was not declared in this scope
+  674 |     ignore(streamsize __n, int_type __delim);
+      |            ^~~~~~~~~~
+/usr/include/c++/11/istream:674:37: error: expected primary-expression before ‘__delim’
+  674 |     ignore(streamsize __n, int_type __delim);
+      |                                     ^~~~~~~
+/usr/include/c++/11/istream:674:44: error: expression list treated as compound expression in initializer [-fpermissive]
+  674 |     ignore(streamsize __n, int_type __delim);
+      |                                            ^
+/usr/include/c++/11/istream:768:65: error: ‘streamsize’ has not been declared
+  768 |     __istream_extract(basic_istream<_CharT, _Traits>&, _CharT*, streamsize);
+      |                                                                 ^~~~~~~~~~
+/usr/include/c++/11/istream:770:43: error: ‘streamsize’ has not been declared
+  770 |   void __istream_extract(istream&, char*, streamsize);
+      |                                           ^~~~~~~~~~
+/usr/include/c++/11/istream: In function ‘std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)’:
+/usr/include/c++/11/istream:816:47: error: ‘streamsize’ was not declared in this scope
+  816 |             __n = __gnu_cxx::__numeric_traits<streamsize>::__max;
+      |                                               ^~~~~~~~~~
+/usr/include/c++/11/istream:816:57: error: template argument 1 is invalid
+  816 |             __n = __gnu_cxx::__numeric_traits<streamsize>::__max;
+      |                                                         ^
+In file included from /usr/include/c++/11/istream:995,
+                 from /usr/include/c++/11/iostream:40,
+                 from ./inc/base.h:15,
+                 from src/base.cpp:13:
+/usr/include/c++/11/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>::int_type std::basic_istream<_CharT, _Traits>::get()’:
+/usr/include/c++/11/bits/istream.tcc:248:7: error: ‘_M_gcount’ was not declared in this scope
+  248 |       _M_gcount = 0;
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::get(std::basic_istream<_CharT, _Traits>::char_type&)’:
+/usr/include/c++/11/bits/istream.tcc:282:7: error: ‘_M_gcount’ was not declared in this scope
+  282 |       _M_gcount = 0;
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: At global scope:
+/usr/include/c++/11/bits/istream.tcc:317:25: error: ‘streamsize’ has not been declared
+  317 |     get(char_type* __s, streamsize __n, char_type __delim)
+      |                         ^~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::get(std::basic_istream<_CharT, _Traits>::char_type*, int, std::basic_istream<_CharT, _Traits>::char_type)’:
+/usr/include/c++/11/bits/istream.tcc:319:7: error: ‘_M_gcount’ was not declared in this scope
+  319 |       _M_gcount = 0;
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::get(std::basic_istream<_CharT, _Traits>::__streambuf_type&, std::basic_istream<_CharT, _Traits>::char_type)’:
+/usr/include/c++/11/bits/istream.tcc:366:7: error: ‘_M_gcount’ was not declared in this scope
+  366 |       _M_gcount = 0;
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc:392:59: error: ‘streamsize’ was not declared in this scope
+  392 |               if (__gcount <= __gnu_cxx::__numeric_traits<streamsize>::__max)
+      |                                                           ^~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc:392:69: error: template argument 1 is invalid
+  392 |               if (__gcount <= __gnu_cxx::__numeric_traits<streamsize>::__max)
+      |                                                                     ^
+/usr/include/c++/11/bits/istream.tcc: At global scope:
+/usr/include/c++/11/bits/istream.tcc:415:29: error: ‘streamsize’ has not been declared
+  415 |     getline(char_type* __s, streamsize __n, char_type __delim)
+      |                             ^~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::getline(std::basic_istream<_CharT, _Traits>::char_type*, int, std::basic_istream<_CharT, _Traits>::char_type)’:
+/usr/include/c++/11/bits/istream.tcc:417:7: error: ‘_M_gcount’ was not declared in this scope
+  417 |       _M_gcount = 0;
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore()’:
+/usr/include/c++/11/bits/istream.tcc:477:7: error: ‘_M_gcount’ was not declared in this scope
+  477 |       _M_gcount = 0;
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: At global scope:
+/usr/include/c++/11/bits/istream.tcc:507:5: error: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore’ is not a static data member of ‘class std::basic_istream<_CharT, _Traits>’
+  507 |     basic_istream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc:508:12: error: template definition of non-template ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore’
+  508 |     ignore(streamsize __n)
+      |            ^~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc:508:12: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/11/bits/istream.tcc:577:5: error: ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore’ is not a static data member of ‘class std::basic_istream<_CharT, _Traits>’
+  577 |     basic_istream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc:578:12: error: template definition of non-template ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::ignore’
+  578 |     ignore(streamsize __n, int_type __delim)
+      |            ^~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc:578:12: error: ‘streamsize’ was not declared in this scope
+/usr/include/c++/11/bits/istream.tcc:578:37: error: expected primary-expression before ‘__delim’
+  578 |     ignore(streamsize __n, int_type __delim)
+      |                                     ^~~~~~~
+/usr/include/c++/11/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>::int_type std::basic_istream<_CharT, _Traits>::peek()’:
+/usr/include/c++/11/bits/istream.tcc:658:7: error: ‘_M_gcount’ was not declared in this scope
+  658 |       _M_gcount = 0;
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: At global scope:
+/usr/include/c++/11/bits/istream.tcc:685:26: error: ‘streamsize’ has not been declared
+  685 |     read(char_type* __s, streamsize __n)
+      |                          ^~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::read(std::basic_istream<_CharT, _Traits>::char_type*, int)’:
+/usr/include/c++/11/bits/istream.tcc:687:7: error: ‘_M_gcount’ was not declared in this scope
+  687 |       _M_gcount = 0;
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: At global scope:
+/usr/include/c++/11/bits/istream.tcc:712:5: error: ‘streamsize’ does not name a type
+  712 |     streamsize
+      |     ^~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::putback(std::basic_istream<_CharT, _Traits>::char_type)’:
+/usr/include/c++/11/bits/istream.tcc:750:7: error: ‘_M_gcount’ was not declared in this scope
+  750 |       _M_gcount = 0;
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: In member function ‘std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::unget()’:
+/usr/include/c++/11/bits/istream.tcc:785:7: error: ‘_M_gcount’ was not declared in this scope
+  785 |       _M_gcount = 0;
+      |       ^~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: At global scope:
+/usr/include/c++/11/bits/istream.tcc:991:23: error: ‘streamsize’ has not been declared
+  991 |                       streamsize __num)
+      |                       ^~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: In function ‘void std::__istream_extract(std::basic_istream<_CharT, _Traits>&, _CharT*, int)’:
+/usr/include/c++/11/bits/istream.tcc:999:7: error: ‘streamsize’ was not declared in this scope
+  999 |       streamsize __extracted = 0;
+      |       ^~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc:1007:25: error: expected ‘;’ before ‘__width’
+ 1007 |               streamsize __width = __in.width();
+      |                         ^~~~~~~~
+      |                         ;
+/usr/include/c++/11/bits/istream.tcc:1008:23: error: ‘__width’ was not declared in this scope; did you mean ‘wcwidth’?
+ 1008 |               if (0 < __width && __width < __num)
+      |                       ^~~~~~~
+      |                       wcwidth
+/usr/include/c++/11/bits/istream.tcc:1017:22: error: ‘__extracted’ was not declared in this scope
+ 1017 |               while (__extracted < __num - 1
+      |                      ^~~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc:1027:19: error: ‘__extracted’ was not declared in this scope
+ 1027 |               if (__extracted < __num - 1
+      |                   ^~~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc:1044:12: error: ‘__extracted’ was not declared in this scope
+ 1044 |       if (!__extracted)
+      |            ^~~~~~~~~~~
+/usr/include/c++/11/bits/istream.tcc: At global scope:
+/usr/include/c++/11/bits/istream.tcc:1103:63: error: ‘streamsize’ has not been declared
+ 1103 |   extern template void __istream_extract(wistream&, wchar_t*, streamsize);
+      |                                                               ^~~~~~~~~~
+make: *** [Makefile:31 : bin/base.o] Erreur 1

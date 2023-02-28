@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   main.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/02 20:08:43 by shalimi           #+#    #+#             */
-/*   Updated: 2023/02/28 19:49:00 by shalimi          ###   ########.fr       */
+/*   Created: 2023/02/03 14:05:50 by shalimi           #+#    #+#             */
+/*   Updated: 2023/02/03 14:24:29 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "data.h"
+#ifndef MAIN_H
+# define  MAIN_H
+# include <iostream>
 
-uintptr_t serialize(Data * ptr)
-{
-	return (reinterpret_cast<uintptr_t>(ptr));
-}
+template <typename T>
+void	swap(T & a, T & b);
 
-Data * deserialize(uintptr_t ptr)
-{
-	return reinterpret_cast<Data *>(ptr);
-}
+template <typename T>
+T &	max(T & a, T & b);
+template <typename T>
+T &	min(T & a, T & b);
 
-int	main(void)
-{
-	Data d;
-	d.data = 10;
-	uintptr_t s = serialize(&d);
-	Data * u = deserialize(s);
-	std::cout << u->data << std::endl;
-}
+
+
+
+#endif

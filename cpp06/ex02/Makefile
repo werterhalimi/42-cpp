@@ -1,4 +1,4 @@
-SRCS_FILES		:= main.cpp ScalarConverter.cpp
+SRCS_FILES		:= base.cpp
 SRCS_DIR		:= ./src/
 
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRCS_FILES))
@@ -7,21 +7,21 @@ OBJS_FILES		:= $(SRCS_FILES:.cpp=.o)
 
 OBJS_DIR		:= ./bin/
 
-OBJS_SUB_DIR	:=
+OBJS_SUB_DIR		:=
 OBJS			:= $(addprefix $(OBJS_DIR),$(OBJS_FILES))
 
 
 INC_DIR			:= ./inc/
-INC			:= main.h ScalarConverter.h 
+INC			:= base.h
 HEADERS 		:= $(addprefix $(INC_DIR),$(INC))
 
-CC				:= @c++
-CFLAGS			:= -g -Wall -Wextra -Werror -I $(INC_DIR)  -std=c++98
+CC				:= @g++
+CFLAGS			:= -g -Wall -Wextra -Werror -I $(INC_DIR) -std=c++98
 RM				:= @rm -f
 LIB				:= 
 DEBUG			:= -g# -fsanitize=address
 UNIT			:= ""
-NAME			:= convert 
+NAME			:= pdn 
 
 all:			$(NAME)
 

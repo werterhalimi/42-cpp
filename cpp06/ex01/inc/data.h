@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.h                                             :+:      :+:    :+:   */
+/*   data.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/27 17:45:29 by shalimi           #+#    #+#             */
-/*   Updated: 2023/02/28 19:24:44 by shalimi          ###   ########.fr       */
+/*   Created: 2023/02/02 20:03:17 by shalimi           #+#    #+#             */
+/*   Updated: 2023/02/28 19:44:42 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_H
-# define MAIN_H
+#ifndef DATA_H
+# define DATA_H
 # include <iostream>
-# include <iomanip>
-# include <sstream>
-# include <string>
-#include "ScalarConverter.h"
+# include <stdint.h>
+
+struct Data
+{
+	int data;
+};
 #endif

@@ -6,7 +6,7 @@
 /*   By: shalimi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 19:28:24 by shalimi           #+#    #+#             */
-/*   Updated: 2023/02/28 19:42:58 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/03/04 21:54:03 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,17 +107,25 @@ void ScalarConverter::convert(std::string arg)
 
 	if (getPrecision(arg) == 0)
 	{
-		if (arg[0] >= '0' && arg[0] <= '9')
+		if ((arg[0] >= '0' && arg[0] <= '9') || (arg[0] == '-' && arg[1] >= '0' && arg[1] <= '9'))
 		{
-			int c = stoi(arg);	
-			if(std::isprint(c))	
-				std::cout << "char: '" << static_cast<char>(c) << "'"  << std::endl;
-			else
-				std::cout << "char: non displayable" << std::endl;
-			std::cout << "int: " << c << std::endl;
-			std::cout << "float: " << ftos(static_cast<float>(c), getPrecision(arg)) << ".0f" << std::endl;
-			std::cout << "double: " << dtos(static_cast<double>(c), getPrecision(arg)) << ".0" << std::endl;
-			return ;
+			try
+			{
+				int c = stoi(arg);	
+				if(std::isprint(c))	
+					std::cout << "char: '" << static_cast<char>(c) << "'"  << std::endl;
+				else
+					std::cout << "char: non displayable" << std::endl;
+				std::cout << "int: " << c << std::endl;
+				std::cout << "float: " << ftos(static_cast<float>(c), getPrecision(arg)) << ".0f" << std::endl;
+				std::cout << "double: " << dtos(static_cast<double>(c), getPrecision(arg)) << ".0" << std::endl;
+				return ;
+			}
+			catch(std::out_of_range & e)
+			{
+				std::cout << "Bad input" << std::endl;
+				return ;
+			}
 		}
 		char c = arg[0];
 		std::cout << "char: '" << c << "'" << std::endl;
@@ -153,7 +161,5 @@ void ScalarConverter::convert(std::string arg)
 		std::cout << "double: " << dtos(static_cast<double>(d), getPrecision(arg)) << std::endl;
 		return ;
 	}
-
-
-
+	std::cout << "Bad input" << std::endl;
 }

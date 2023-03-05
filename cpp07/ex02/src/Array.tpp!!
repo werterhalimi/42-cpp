@@ -6,29 +6,29 @@
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/03 15:08:36 by shalimi           #+#    #+#             */
-/*   Updated: 2023/03/05 01:10:45 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/03/05 00:37:11 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Array.h"
-/*
+
+template<typename T>
+Array<T>::~Array(void) { delete[] this->array; }
+
+
+
+template<typename T>
+Array<T>::Array(void) : array(new T[0]), len(0u) {}
+
 int	main(void)
 {
-	Array<int> a(10);
-	int	i = 0;
-
-	while (i < 10)
-	{
-		a[i] = i;
-		std::cout << a[i] << std::endl;
-		i++;
-	}
+	Array<int> a;
+	(void) a;
 }
-*/
-
-
+/*
+#if MAIN == 0
 #include <iostream>
-#include <Array.h>
+#include <Array.hpp>
 
 #define MAX_VAL 750
 int main(int, char**)
@@ -80,3 +80,5 @@ int main(int, char**)
     delete [] mirror;//
     return 0;
 }
+#endif
+*/

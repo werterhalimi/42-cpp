@@ -1,9 +1,10 @@
-SRCS_FILES		:= main.cpp Array.cpp
+SRCS_FILES		:= Array.cpp main.cpp
 SRCS_DIR		:= ./src/
 
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRCS_FILES))
 
-OBJS_FILES		:= $(SRCS_FILES:.cpp=.o)
+OBJS_FILES		:= $(SRCS_FILES:.cpp=.o) 
+
 
 OBJS_DIR		:= ./bin/
 
@@ -25,12 +26,12 @@ NAME			:= convert
 
 all:			$(NAME)
 
-${OBJS_DIR}%.o:	${SRCS_DIR}%.cpp $(HEADERS)
+${OBJS_DIR}%.o:	${SRCS_DIR}%.cpp  $(HEADERS)
 				@mkdir -p $(OBJS_DIR) $(OBJS_SUB_DIR)
 				@echo "\033[1;32mCompiling $<\033[0m"  #Ajout de la ligne pour afficher le pourcentage de compilation en couleur.
 				$(CC) $(UNIT) $(CFLAGS) -c $< -o $@
 
-$(NAME):		$(OBJS)
+$(NAME):		$(OBJS) $(HEADERS)
 				$(CC) $(CFLAGS) $(LIB) -o $(NAME) $(OBJS)
 
 unit:			clean

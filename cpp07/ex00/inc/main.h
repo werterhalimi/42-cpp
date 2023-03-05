@@ -6,7 +6,7 @@
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/03 14:05:50 by shalimi           #+#    #+#             */
-/*   Updated: 2023/02/03 14:24:29 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/03/05 20:49:03 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,28 @@ T &	max(T & a, T & b);
 template <typename T>
 T &	min(T & a, T & b);
 
+template <typename T>
+void 	swap(T & a, T & b)
+{
+	T const	tmp = a;
+	a = b;
+	b = tmp;
+}
 
+template <typename T>
+T &	max(T & a, T & b) 
+{
+	if (a <= b)
+		return b;
+	return a;
+}
 
+template <typename T>
+T &	min(T & a, T & b)
+{
+	if (a >= b)
+		return b;
+	return a;
+}
 
 #endif

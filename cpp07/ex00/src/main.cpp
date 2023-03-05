@@ -6,35 +6,13 @@
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/03 14:08:33 by shalimi           #+#    #+#             */
-/*   Updated: 2023/02/03 14:25:50 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/03/05 20:50:38 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "main.h"
 
-template <typename T>
-void 	swap(T & a, T & b)
-{
-	T const	tmp = a;
-	a = b;
-	b = tmp;
-}
 
-template <typename T>
-T &	max(T & a, T & b) 
-{
-	if (a <= b)
-		return b;
-	return a;
-}
-
-template <typename T>
-T &	min(T & a, T & b)
-{
-	if (a >= b)
-		return b;
-	return a;
-}
 
 int	main(void)
 {
@@ -53,7 +31,7 @@ int	main(void)
 		std::cout << a << " " << c << std::endl;
 		std::cout << "min:" << min<int>(a,c) << " / max: " << max<int>(a,c) << std::endl;
 		int & m = max(a,c); 
-		std::cout << "aPTR=" << &a << "cPtr=" << &c << std::endl <<  "maxPtr=" << &m << std::endl; 
+		std::cout << "aPTR=" << &a << std::endl << "cPtr=" << &c << std::endl <<  "maxPtr=" << &m << std::endl; 
 	}
 	int a = 2;
 	int b = 3;

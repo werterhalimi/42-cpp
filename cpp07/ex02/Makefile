@@ -1,4 +1,4 @@
-SRCS_FILES		:= Array.cpp main.cpp
+SRCS_FILES		:= main.cpp
 SRCS_DIR		:= ./src/
 
 SRCS			:= $(addprefix $(SRCS_DIR),$(SRCS_FILES))

@@ -6,7 +6,7 @@
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/03 15:05:27 by shalimi           #+#    #+#             */
-/*   Updated: 2023/03/05 01:13:34 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/03/07 15:01:27 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ T & Array<T>::operator[](unsigned int index)
 {
 	if (index < 0 || index >= this->len)
 	{
-		throw std::exception();
+		throw std::invalid_argument("Out of range");
 	}
 	return this->array[index];
 }

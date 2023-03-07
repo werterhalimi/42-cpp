@@ -6,7 +6,7 @@
 /*   By: shalimi <shalimi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/03 14:05:50 by shalimi           #+#    #+#             */
-/*   Updated: 2023/03/05 20:49:03 by shalimi          ###   ########.fr       */
+/*   Updated: 2023/03/07 16:37:29 by shalimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ T &	min(T & a, T & b);
 template <typename T>
 void 	swap(T & a, T & b)
 {
-	T const	tmp = a;
+	T tmp = a;
 	a = b;
 	b = tmp;
 }
